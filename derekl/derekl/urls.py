@@ -23,6 +23,4 @@ from mysite import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('mysite.urls')),
-]
-
-urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
