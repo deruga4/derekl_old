@@ -1,1 +1,0 @@
-web: gunicorn derekl.wsgi --log-file -
